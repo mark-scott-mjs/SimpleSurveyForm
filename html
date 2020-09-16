@@ -1,0 +1,94 @@
+<div class='container'> 
+  <header class='header'> 
+    <h1 id='title'>General Survey Form</h1>
+    <p id='description'>This survey will ask simple questions to get a basic understanding of the individual.</p>
+  </header>
+  <form id='survey-form'>
+    <div class='form-group'>
+      <label id='name-label' for='name'>Name</label>
+      <input type='text' name='name' id='name' placeholder='Enter your name' required />
+</div> 
+    <div class='form-group'>
+      <label id='email-label' for='email'>Email</label> 
+      <input type='email' name='email' id='email' placeholder='Enter your email address' required />
+    </div>
+    <div class='form-group'>
+      <label id='number-label' for='age'>Age<span>(optional)</span></label>
+      <input type='number' name='age' id='number' min='10' max='100' placeholder='Enter your age' optional />
+    </div>
+    <div class='form-group'>
+      <p>Which of these options best describes your current employment status?</p>
+      <select id='dropdown'name='employment-status' class='' required>
+        <option disabled selected value>Select</option>
+        <option value='full-time'>Full Time Employment</option>
+        <option value='part-time'>Part Time Employment</option>
+        <option value='student'>Student</option>
+        <option value='unemployed'>Unemployed</option>
+        <option value='disabled'>Disabled</option>
+        <option value='other'>Other</option>
+      </select>
+    </div>
+    <div class='form-group'>
+      <p>What is your gender?</p>
+      <label>
+        <input name='gender' value='male' type='radio' class='radio-button' checked/>Male   
+      </label>
+      <label>
+        <input name='gender' value='female' type='radio' class='radio-button'/>Female
+      </label>
+      <label>
+        <input name='gender' value='other' type='radio' class='radio-button'/>Other
+      </label>
+    </div>
+    <div class='form-group'>
+      <p>What is your favorite color from this list?</p>
+      <select id='favorite-color' name='favoriteColor' required>
+        <option disabled selected value>Select a color</option>
+        <option value='red'>Red</option>
+        <option value='violet'>Violet</option>
+        <option value='blue'>Blue</option>
+        <option value='green'>Green</option>
+        <option value='yellow'>Yellow</option>
+        <option value='orange'>Orange</option>
+      </select>
+    </div>
+    <div class='form-group'>
+      <p>What subjects are you interested in?<span class=''>(Select all that apply)</span></p>
+      <label>
+        <input name='subject' value='math' type='checkbox'/>Math
+      </label>
+      <label>
+        <input name='subject' value='physics' type='checkbox'/>Physics
+      </label>
+      <label>
+        <input name='subject' value='chemistry' type='checkbox'/>Chemistry
+      </label>
+      <label>
+        <input name='subject' value='biology' type='checkbox'/>Biology
+      </label>
+      <label>
+        <input name='subject' value='computer-science' type='checkbox'/>Computer Science
+      </label>
+      <label>
+        <input name='subject' value='english' type='checkbox'/>English
+      </label>
+      <label>
+        <input name='subject' value='art' type='checkbox'/>Art
+      </label>
+      <label>
+        <input name='subject' value='music' type='checkbox'/>Music
+      </label>
+      <label>
+        <input name='subject' value='history' type='checkbox'/>History
+      </label>
+      
+    </div>
+    <div class='form-group'>
+      <p>How would you describe yourself?</p>
+      <textarea id='self-description' name='description' placeholder='Describe yourself here....'></textarea>     
+    </div>
+    <div class='form-group'>
+      <button type='submit' id='submit'>Submit</button>
+    </div>
+  </form>
+</div>
