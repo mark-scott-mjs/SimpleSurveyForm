@@ -1,0 +1,55 @@
+:root {
+  --color-green: #37AF65;
+  --color-lightgreen: #8FBC8F;
+  --color-indigo: #4B0082; 
+  --color-lightpurple:#B19CD9;
+  --color-lightyellow: #FFE4B5;
+}
+
+/* Classes */
+.container {
+  background: var(--color-lightyellow);
+}
+
+.header {}
+
+.form-group {
+  background: var(--color-lightyellow);
+}
+
+.radio-button {
+  display: inline;
+}
+
+/* id */
+#title {
+  text-align: center;
+}
+
+#description {
+  text-align: center;
+}
+
+#survey-form {
+  text-align: center;
+}
+
+#name-label {}
+
+#name {}
+
+#email-label {}
+
+#email {}
+
+#age-label {}
+
+#age {}
+
+#dropdown {}
+
+#favorite-color {}
+
+#self-description {}
+
+#submit {}
